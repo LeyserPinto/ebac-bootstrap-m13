@@ -1,0 +1,64 @@
+
+:root{
+    --indigo-100: rgba(102, 16, 242,1);
+    --indigo-50: rgba(102, 16, 242,.50);
+    --indigo-25: rgba(102, 16, 242,.25);
+    --white-100: rgba(255,255,255,1);
+    --white-75: rgba(255,255,255,.75);
+    --white-50: rgba(255,255,255,.50);
+}
+header{
+    background-color: var(--indigo-100);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.text-light-100{
+    color: var(--white-100) !important;
+}
+.navbar-nav .nav-link{
+    color: var(--white-75) !important;
+}
+.navbar-nav .nav-link.active {
+    color: var(--white-100) !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+#carousel {
+    height: 80vh;
+    overflow: hidden;
+}
+
+#carousel-item img {
+    object-fit: cover;
+    object-position: top;
+}
+.card img{
+    height: 380px;
+}
+.btn-primary{
+    max-height: 36px !important;
+    background-color: var(--indigo-100) !important;
+    border: none !important;
+    outline: none !important;
+}
+.btn-primary:hover{
+    background-color: var(--indigo-50) !important;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: var(--indigo-100);
+}
+@media screen and (max-width:1000px) {
+
+    #carousel {
+        height: 40vh;
+        overflow: hidden;
+    }
+}
